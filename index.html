@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <title>Expresso-Cafeteria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+
+            <nav class="navbar">
+
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#menu">Menu</a>
+                <a href="#review">Avaliações</a>
+                <a href="#address">Endereço</a>
+            </nav>
+
+            <div>
+                <button class="icons"> 
+                    <img id="cart-btn" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png" />
+                    <span id="cart-count" class="cart-count"> 0 </span>
+                </button>
+            </div>
+        </section>
+    </header>
+
+    <div class="home-container">
+        <section id="home">
+            <div class="content">
+                <h3>O MELHOR CAFÉ DA REGIÃO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga et natus nisi sunt pariatur
+                    consequuntur
+                    eveniet, voluptas ipsam! Est, rerum debitis. Maxime rem molestias pariatur ex dolorem eum eos totam.
+                </p>
+                <a href="#menu" class="btn">Pegue o seu agora</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="about" id="about">
+        <h2 class="title">Sobre <span>Nós</span></h2>
+        <div class="row">
+            <div class="container-image">
+                <img src="./img/about-img.jpg">
+            </div>
+
+            <div class="content">
+                <h3>O que faz nosso café especial</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo libero iure tenetur aliquam itaque
+                    corrupti non at numquam totam cupiditate! Sequi a sed repellendus. Facilis impedit neque deserunt
+                    accusamus eaque?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ut alias obcaecati adipisci,
+                    consectetur omnis, deleniti laborum corporis similique amet aut quae. Aut reprehenderit quaerat
+                    omnis impedit culpa, laudantium quo!</p>
+
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+
+        <h2 class="title">Nosso <span>Menu</span></h2>
+        <div class="box-container">
+            
+            <div class="box">
+                <img src="img/menu-1.png">
+                <h3 class="data-name">Café Espresso Italiano</h3>
+                <div class="data-price">R$ 8,00</div>
+
+                <button class="add-to-cart-btn" id="item-btn"
+                data-name="Café Expresso Italiano" 
+                 data-price="8.00"
+                >Adicione ao Carrinho</button>
+            </div>
+
+            <div class="box">
+                <img src="img/menu-2.png">
+                <h3 class="data-name">Café Pingado</h3>
+                <div class="data-price">R$ 6,00 <span>R$ 12,00</span></div>
+                
+                <button class="add-to-cart-btn" id="item-btn"
+                data-name="Café Pingado" 
+                 data-price="6.00"
+                >Adicione ao Carrinho</button>
+            </div>
+
+            <div class="box">
+                <img src="img/menu-3.png">
+                <h3 class="data-name">Café Cappuccino</h3>
+                <div class="data-price">R$ 10,50</div>
+                
+                <button class="add-to-cart-btn" id="item-btn"
+                data-name="Café Cappuccino" 
+                 data-price="10.50"
+                >Adicione ao Carrinho</button>
+            </div>
+
+            <div class="box">
+                <img src="img/menu-4.png">
+                <h3 class="data-name">Café Espresso</h3>
+                <div class="data-price">R$ 5,00 <span>R$ 10,00</span></div>
+                
+                <button class="add-to-cart-btn" id="item-btn"
+                data-name="Café Expresso" 
+                 data-price="5.00"
+                >Adicione ao Carrinho</button>
+            </div>
+
+            <div class="box">
+                <img src="img/menu-5.png">
+                <h3 class="data-name">Café Latte</h3>
+                <div class="data-price">R$ 7,50</div>
+                
+                <button class="add-to-cart-btn" id="item-btn"
+                data-name="Café Latte" 
+                 data-price="7.50"
+                >Adicione ao Carrinho</button>
+            </div>
+
+            <div class="box">
+                <img src="img/menu-6.png">
+                <h3 class="data-name">Café Mocha</h3>
+                <div class="data-price">R$ 10,00 <span>R$ 16,50</span></div>
+                
+                <button class="add-to-cart-btn" id="item-btn"
+                data-name="Café Mocha" 
+                 data-price="10.00"
+                >Adicione ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="review" id="review">
+        <h2 class="title">Nossos <span>Clientes</span></h2>
+
+        <div class="box-container">
+            <div class="box">
+                <img class="print" src="img/quote-img.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, explicabo culpa eos nam harum
+                    adipisci molestias nulla, possimus eum quod obcaecati minus aperiam qui alias dicta aut suscipit ut.
+                    Minus.</p>
+                <img class="user" src="img/pic-1.png">
+                <h3>Nome Cliente</h3>
+
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+                        alt="star-half-empty" />
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/quote-img.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, explicabo culpa eos nam harum
+                    adipisci molestias nulla, possimus eum quod obcaecati minus aperiam qui alias dicta aut suscipit ut.
+                    Minus.</p>
+                <img class="user" src="img/pic-2.png">
+                <h3>Nome Cliente</h3>
+
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/quote-img.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, explicabo culpa eos nam harum
+                    adipisci molestias nulla, possimus eum quod obcaecati minus aperiam qui alias dicta aut suscipit ut.
+                    Minus.</p>
+                <img class="user" src="img/pic-3.png">
+                <h3>Nome Cliente</h3>
+
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+                        alt="star-half-empty" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="address" id="address">
+        <h2 class="title">Nosso <span>Endereço</span></h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1889995.541856035!2d-50.12577808563026!3d-22.300800099999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c757a52244d15d%3A0x24a1d259f4131784!2sDinos%20Cafeteria!5e0!3m2!1spt-BR!2sbr!4v1717737823816!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="footer">
+        <div class="share">
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"
+                alt="facebook-new" />
+            <img width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/ffffff/instagram-new.png"
+                alt="instagram-new" />
+            <img width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/ffffff/whatsapp.png" alt="whatsapp" />
+        </div>
+    </section>
+
+
+    <div id="cart-modal" class="cart-modal" hidden>
+
+        <div class="card">
+            <div class="modal">
+                <h2>Meu carrinho</h2>
+
+                <div class="cart-items" id="cart-items">
+
+                    <div id="cart-container"></div>
+       
+                </div>
+
+                <p>Total:<span id="cart-total">0.00</span></p>
+                <div class="btns">
+                    <button class="close-modal-btn" id="close-modal-btn">Fechar</button>
+                    <button class="checkout-btn" id="checkout-btn">Finalizar pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
